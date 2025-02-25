@@ -1,0 +1,231 @@
+// @import '../../styles/constants.scss';
+
+.table > :not(:first-child) {
+  border-top: none;
+  border: none;
+}
+
+.user-list {
+  overflow: auto;
+  margin-right: 10px;
+  padding: 20px 20px 10px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  .user-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 4px;
+  }
+
+  .table.user-page {
+    background-color: #fff;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    border: none;
+
+    button.add-btn {
+      background: none;
+      color: gray;
+      height: 40px;
+      width: 40px;
+      border-radius: 10px;
+      border: 1px solid;
+      font-size: x-large;
+      margin-right: 10px;
+    }
+
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    tr {
+      border: none;
+    }
+    th,
+    td {
+      text-align: center;
+    }
+    tr {
+      width: 100%;
+
+      th:nth-child(1) {
+        width: 5%;
+      }
+
+      th:nth-child(2),
+      td:nth-child(2) {
+        text-align: start;
+        width: 25%;
+      }
+
+      th:nth-child(3),
+      td:nth-child(3) {
+        text-align: start;
+        width: 19%;
+      }
+
+      th:nth-child(4) {
+        width: 20%;
+      }
+
+      th:nth-child(5) {
+        width: 20%;
+      }
+
+      th:nth-child(6) {
+        width: 11%;
+      }
+
+      td {
+        // background-color: inputBG;
+
+        .actions {
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .eyeIcon {
+          // content: url(../../components/assets/eyeIcon.svg);
+          filter: contrast(0);
+        }
+
+        .editIcon {
+          // content: url(../../components/assets/editIcon.svg);
+          filter: contrast(0);
+        }
+
+        .deleteIcon {
+          // content: url(../../components/assets/deleteIcon.svg);
+          filter: contrast(0);
+        }
+      }
+      .user-btn {
+        background: none;
+        color: #000;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+.image-profile {
+  // content: url(../../components/assets/profile.png);
+  border-radius: 10%;
+  padding: 2px;
+  height: 28px;
+  width: 28px;
+  margin: 0 12px;
+}
+button.add-btn {
+  background: none;
+  color: gray;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid;
+  font-size: x-large;
+  margin-right: 10px;
+}
+
+.user-modal {
+  max-width: 550px;
+  height: 100%;
+  border-radius: 1.1rem;
+  justify-self: end;
+  right: 0;
+  margin: 0 0 0 auto;
+  box-shadow: 0 0 10px 4pxgray;
+
+  .edit-button {
+    width: auto;
+    display: flex;
+    cursor: pointer;
+    padding: auto;
+    right: 0;
+    bottom: 0;
+    color: blue;
+    font-weight: bold;
+    background: none;
+    border: none;
+    box-shadow: 0 0 0 #ffffff;
+  }
+
+  .userHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 1px 24px 24px;
+  }
+
+  .userFooter {
+    float: right;
+    bottom: 0;
+    justify-content: space-between;
+    padding: 12px 12px 24px 12px;
+  }
+  .div-select {
+    width: 294px;
+    border-radius: 3px;
+    color: gray;
+    .select-employee {
+      max-width: 100%;
+      min-width: 294px;
+      // background: inputBG;
+      border-radius: 3px;
+    }
+  }
+
+  .profile-image {
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-bottom: 6%;
+
+    .in-image img {
+      border-radius: 50%;
+      padding: 2px;
+      border: gray solid 1px;
+      height: 82px;
+      width: 82px;
+      margin: 0 12px;
+    }
+
+    .___image {
+      // content: url(../../components/assets/profile.png);
+      border-radius: 50%;
+      padding: 2px;
+      border: gray solid 1px;
+      height: 82px;
+      width: 82px;
+      margin: 0 12px;
+      flex-grow: 0;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  padding: 0 30% 0 30%;
+
+  .next {
+    display: flex;
+    content: url(../../Component/assets/next.svg);
+  }
+
+  .previous {
+    display: flex;
+    content: url(../../Component/assets/previous.svg);
+  }
+}
+
+.activetab {
+  color: #000;
+  border: 1px solid #b4b5b8;
+  padding: 10px;
+  background: #b4b5b8;
+  border-radius: 22%;
+  text-decoration: none;
+}

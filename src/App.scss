@@ -1,0 +1,27 @@
+.modal-backdrop.show {
+  opacity: 0.01;
+}
+.model.show .modal-dialog {
+  transform: none !important;
+}
+
+.model.show .modal-dialog {
+  overflow: hidden;
+  display: flex;
+  justify-self: end;
+  right: 0;
+}
+
+.modal.fade .modal-dialog {
+  transform: translate(0, 0);
+}
+
+.model {
+  position: fixed;
+  width: 600px;
+}
+
+.modal-content {
+  display: block;
+  border: none;
+}

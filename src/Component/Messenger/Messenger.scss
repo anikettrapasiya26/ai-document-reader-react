@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+
+.messenger {
+  height: 90vh;
+  display: flex;
+}
+
+.chatMenu {
+  flex: 2;
+  background-color: #ffffff;
+  border-radius: 18px;
+  clear: left;
+  opacity: 1;
+  display: block;
+}
+
+.chatBox {
+  flex: 5;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+.hzcCgO {
+    display: none;
+  }
+  .chatBoxWrapper {
+    height: 100%;
+    // width: 95%;
+    padding: 0 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+
+  .chatBoxWrapper.chatBoxTop>h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid gray;
+  }
+
+  .chatBoxTop {
+    height: 90%;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    // display: inline-table;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    // padding-left: 0.4rem;
+    scroll-margin-left: 1rem;
+  }
+
+  .chatBoxBottom {
+    background-color: #f5f4ff;
+    display: flex;
+    margin: 0 40px 10px;
+    padding-left: 30px;
+    padding-right: 10px;
+    background: #f5f4ff;
+    border: 1px solid #8c8c8c;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: space-between;
+
+.chatMessageInput {
+      padding: 10px 0px;
+      width: 90%;
+      // height: 3rem;
+      margin-top: 0;
+      background: unset;
+      border: none;
+
+      &:disabled {
+        opacity: 0.5;
+      }
+     
+    }
+
+    .chatSubmitButton {
+      background: none;
+      overflow: visible;
+      position: relative;
+      // float: right;
+      // display: flex;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      padding: 0 10px;
+      align-items: center;
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: default;
+      }
+
+      .chat-submit-btn {
+        padding: 8px 0px;
+        content: url(../assets/send.svg);
+      }
+
+      .chat-pint-btn {
+        padding: 8px 0px;
+        content: url(../assets/pin.svg);
+      }
+    }
+  }
+  .top{
+    text-decoration: none;
+    color: unset;
+  }
+}
+
+.sendButtonImg {
+  width: 25px;
+  height: 30px;
+  object-fit: cover;
+}
+ .multi-files::-webkit-scrollbar {
+   display: none;
+   width: 5px;
+ }
+.multi-files {
+  margin: 0 10px 10px 10px;
+  display: flex;
+  background: #ffffff;
+  align-items: flex-start;
+  overflow-y: auto;
+ 
+
+  button {
+    // width: 173.13px;
+    //   height: 33px;
+    width: 114px;
+    min-width: 114px;
+    height: 48px;
+    color: black;
+    // font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 60px;
+    background: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 10px 0 0;
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+
+  button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  button:active {
+    background-color: #000;
+    color: #fff;
+  }
+
+  button.active {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.multi-extraction {
+  margin: 0 10px 10px 10px;
+  justify-content: space-around;
+  display: flex;
+  background: #ffffff;
+  align-items: center;
+
+  button {
+    // width: 173.13px;
+    //   height: 33px;
+    box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.25);
+    // font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 60px;
+    padding: 15px 30px;
+    background: #ffffff;
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+
+  button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .active {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .chatBox {
+    width: 50%;
+    display: inline;
+
+    .chatBoxBottom {
+      background-color: #f5f4ff;
+      margin: 0 20px 30px;
+      display: flex;
+      background: #f5f4ff;
+      border: 1px solid #8c8c8c;
+      border-radius: 18px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .sendButtonImg {
+    width: 13px;
+    height: 22px;
+    object-fit: cover;
+  }
+
+  .multi-extraction {
+
+    // flex-flow: column;
+    // flex-wrap: wrap;
+    // align-items: unset;
+    // justify-content: unset;
+    button {
+      padding: 10px;
+      // width: 140px;
+      margin: 0.2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .chatBox {
+    .multi-extraction {
+      // flex-flow: column;
+      flex-wrap: wrap;
+      align-items: unset;
+      justify-content: center;
+
+      button {
+        padding: 10px;
+        width: 132px;
+        margin: 0.2rem;
+      }
+    }
+
+    .chatBoxBottom {
+      background-color: #f5f4ff;
+      margin: 0 20px 40px;
+      display: flex;
+      background: #f5f4ff;
+      border: 1px solid #8c8c8c;
+      border-radius: 18px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sendButtonImg {
+      width: 13px;
+      height: 22px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .chatBox {
+    .chatBoxBottom {
+      background-color: #f5f4ff;
+      display: flex;
+      margin: 0 20px 40px;
+      background: #f5f4ff;
+      border: 1px solid #8c8c8c;
+      border-radius: 18px;
+      align-items: center;
+      justify-content: center;
+
+      .chatSubmitButton {
+        background: none;
+        overflow: visible;
+        position: relative;
+        float: right;
+        display: flex;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        padding: 0 10px;
+        align-items: center;
+
+        .chat-submit-btn {
+          content: url(../assets/send.svg);
+        }
+
+        .chat-pint-btn {
+          content: url(../assets/pin.svg);
+        }
+      }
+    }
+
+    .sendButtonImg {
+      width: 13px;
+      height: 22px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: 328px) {
+  .chatBox {
+    .multi-extraction {
+      // flex-flow: column;
+      flex-wrap: wrap;
+      align-items: unset;
+      display: contents;
+      // width: 100px;
+      justify-content: center;
+
+      button {
+        padding: 10px;
+        width: 132px;
+        margin: 0.2rem;
+      }
+    }
+  }
+}

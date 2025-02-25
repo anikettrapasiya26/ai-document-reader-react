@@ -1,0 +1,42 @@
+@import '../../style/constants.scss';
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.back-drop-loader.show {
+  opacity: 0.5;
+}
+.modal-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal-content {
+    // animation: spinner 3s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
+    // border: 2px solid white;
+    content: url(../../Component/assets/logo.gif);
+  }
+}
+
+.model {
+  position: fixed;
+  overflow: hidden;
+}
+.fade {
+  backdrop-filter: blur(3px);
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    /* max-width: var(--bs-modal-width); */
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

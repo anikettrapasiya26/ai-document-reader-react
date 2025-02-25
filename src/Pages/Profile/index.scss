@@ -1,0 +1,321 @@
+@import '../../style/constants.scss';
+
+// .main {
+//   background-color: $backgound;
+// }
+
+.btn-reset {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.back-drop-profile.show {
+  opacity: 0.5;
+}
+
+.flexProfile {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  width: 50vw;
+  padding: 8%;
+}
+
+// .modal-backdrop.show {
+//   opacity: 0.01;
+// }
+
+.model {
+  position: fixed;
+ 
+}
+ .modal-dialog {
+   .modal-content {
+     border-radius: 40px;
+   }
+ }
+// .modal-profile {
+//   max-width: 550px;
+//   height: 100%;
+//   border-radius: 1.1rem;
+//   display: flex;
+//   justify-self: end;
+//   right: 0;
+//   margin: 0 0 0 auto;
+//   box-shadow: 0 0 10px 4px gray;
+
+.edit-button {
+  width: auto;
+  cursor: pointer;
+  padding: auto;
+  right: 0;
+  bottom: 0;
+  font-weight: bold;
+  background: none;
+  border: none;
+  box-shadow: 0 0 0 #ffffff;
+
+  .edit-img {
+    height: 44px;
+      padding-left: 0;
+    content: url(../../Component/assets/edit.svg);
+  }
+}
+
+.cancel-btn {
+    cursor: pointer;
+    padding: auto;
+    font-weight: bolder;
+    background: none;
+    border: none;
+    box-shadow: 0 0 0 #ffffff;
+  .cancel-img {
+    padding: 0;
+    width: 20px;
+      content: url(../../Component/assets/cancel.svg);
+    }
+}
+
+.save-btn {
+  border: none;
+  display: flex;
+  /* width: 272px; */
+  justify-content: center;
+  background: black;
+  padding: 10px 71px;
+  border-radius: 32px;
+  align-items: center;
+  /* width: -webkit-fill-available; */
+  padding: auto;
+  margin: auto;
+  color: #ffffff;
+  &:hover,
+  &:active,
+  &:focus,
+    &:focus-visible {
+    background: black;
+  }
+     &:focus,
+     &:focus-visible {
+       border: none;
+     }
+}
+
+.prevName {
+  margin-top: 1rem;
+  justify-content: center;
+  display: flex;
+}
+
+.full-name {
+  padding: 0;
+  text-align: center;
+  border: none;
+  background-color: white;
+
+  &:focus,
+  &:focus-visible {
+    border: none;
+  }
+}
+
+.email-phone {
+  display: flex;
+  justify-content: space-around;
+
+  .flex {
+    border: 1px solid;
+    border-radius: 10px;
+  }
+
+  .form-input-controller {
+    padding: 4px;
+    background: none;
+    .close-btn {
+      border: none;
+      background-color: #ffffff;
+      .reset-img {
+        float: right;
+        content: url(../../Component/assets/pass_edit.svg);
+      }
+      .close-img {
+        float: right;
+        color: gray;
+        height: 15px;
+        width: auto;
+        content: url(../../Component/assets/x.svg);
+      }
+    }
+
+   
+    label {
+      margin-top: 1rem;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    label.email-label {
+      content: url(../../Component/assets/email.svg);
+    }
+
+    label.phone-label {
+      content: url(../../Component/assets/phone.svg);
+    }
+
+    label.password-label {
+      content: url(../../Component/assets/password.svg);
+    }
+
+    input {
+      border: none;
+      text-align: center;
+      margin-top: 0;
+      background: white;
+      font-size: medium;
+    }
+  }
+
+  .email,
+  .phone {
+    width: 220px;
+    display: grid;
+    justify-content: center;
+  }
+  .text-danger {
+    width: 220px;
+    text-align: center;
+  }
+  // input.phone, input.password {
+  //   margin: auto;
+  //   // border: 1px solid gray;
+  //   padding-left: 3rem;
+  // }
+
+  //  {
+  //   margin: auto;
+  //   padding-left: 3rem;
+  // }
+
+  .password {
+    width: 220px;
+    display: grid;
+    justify-content: center;
+  }
+
+  .__image {
+    content: url(../../Component/assets/password.svg);
+  }
+}
+
+.profile-image {
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 2%;
+  padding-bottom: 6%;
+
+  .in-image {
+    border-radius: 50%;
+    padding: 2px;
+    border: $gray solid 1px;
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+    height: 82px;
+    width: 82px;
+  }
+ label.name-label {
+   display: none;
+ }
+  .___image {
+    content: url(../../Component/assets/profile.svg);
+    border-radius: 50%;
+    padding: 2px;
+    border: $gray solid 1px;
+    height: 82px;
+    width: 82px;
+    margin: auto;
+    flex-grow: 0;
+  }
+
+  .__image {
+    margin: 0 12px;
+    flex-grow: 0;
+
+    div {
+      position: relative;
+
+      .camera {
+        // content: url(../../components/assets/camera.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        padding: 20px;
+        border: $gray solid 1px;
+        margin: 0 12px;
+        flex-grow: 0;
+        height: 82px;
+        width: 82px;
+        opacity: 0;
+
+        &:hover {
+          backdrop-filter: blur(75px) brightness(10);
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+.profileHeader {
+  height: 53px;
+}
+.logout.__section {
+  border: none;
+  background-color: white;
+
+  .__image {
+    width: 40px;
+    text-align: center;
+    content: url(../../Component/assets/logout.svg);
+  }
+}
+
+// }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e0e0e0;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 375px) {
+  .email-phone {
+    display: grid;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .email-phone {
+    display: grid;
+  }
+}

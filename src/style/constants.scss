@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:700,500,600,800');
+$main: #ffffff;
+
+$backgound: #000000;
+
+$neu-1: #ecf0f3;
+$neu-2: #d1d9e6;
+
+$white: #fff;
+$lightgray: #c3d2e4;
+$gray: #788892;
+$darkgray: #475366;
+$black: #181818;
+
+// $purple: #4b70e2;
+
+// $transition: 1.25s;
+$transitionTime: 0.3s;
+$sidebarWidth: 240px;
+$smallSidebarWidth: 240px;
+
+$inputBG: #F5F4FF;
+
+// $borderRadius: 1px;
+// $offset: 150%;
+// $inputHeight: 63px;
+// $transitionEasing: cubic-bezier(0.36, 1, 0.62, 0.98);
+
+// $background1: #433b7c;
+// $background2: #2c497f;
+
+// $yellow: #FF6542;
+// $yellow: #ed6a5e;
+// $waterDrop: inset 3px 3px 9px 1px #d0f5f766, inset -3px -2px 8px 1px #7fafaec4,
+//     -2px -1px 2px 0px #1ffdff3d;
+
+@mixin box-shadow($props...) {
+  -webkit-box-shadow: $props;
+  -moz-box-shadow: $props;
+  box-shadow: $props;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+@keyframes showAtLast {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  50% {
+    display: none;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-30%);
+  }
+
+  40% {
+    transform: translateX(-5%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(-30%);
+  }
+
+  70% {
+    transform: translateX(-15%);
+  }
+
+  80% {
+    transform: translateX(-10);
+  }
+
+  85% {
+    transform: translateX(-5);
+  }
+
+  90% {
+    transform: translateX(-1);
+  }
+
+  92% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
